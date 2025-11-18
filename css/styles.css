@@ -349,7 +349,6 @@ img {
 
   .hero-heading {
     font-size: 2.5rem;
-    min-width: 200px;
   }
 
   .hero-image {
@@ -358,6 +357,10 @@ img {
 
   .hero-cta {
     justify-content: center;
+  }
+
+  .rotating-word {
+    min-width: 300px;
   }
 }
 
@@ -406,3 +409,63 @@ img {
 
 /* Dot animation end */
 
+.footer {
+  background: var(--text-dark);
+  color: #fbfff1;
+  padding: 60px 20px 30px;
+  position: relative;
+  z-index: 1;
+
+  box-shadow: 0 -1px 5px black;
+}
+
+.footer-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-section a {
+  display: block;
+  margin-bottom: 5px;
+  color: #b4c5e4;
+  transition: var(--transition);
+}
+
+.footer-section a:hover {
+  color: #fbfff1;
+  padding-left: 2.5px;
+}
+
+.footer-bottom {
+  text-align: left;
+  padding-top: 20px;
+  border-top: 1px solid #fbfff1;
+  color: #fbfff1;
+}
+
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 30px;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.footer-icons img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
