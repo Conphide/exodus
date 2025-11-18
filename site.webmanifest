@@ -1,0 +1,32 @@
+{
+  "name": "Free Bot Hosting | Exodus",
+  "short_name": "Exodus",
+  "description": "Fast, secure bot hosting for WhatsApp, Telegram, Discord, game servers and so much more.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#090C9B",
+  "background_color": "#fbfff1",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["utilities",
+                 "productivity",
+                 "developer-tools",
+                 "business",
+                 "social",
+                 "communications"
+]
+}
