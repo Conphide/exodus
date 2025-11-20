@@ -413,11 +413,11 @@ img {
 /* Dot animation end */
 
 .main-content {
-  background-image: url("../images/main-bg.png");
-  background-size: auto 100%;
-  background-attachment: fixed;
-  background-position: center;
   position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-image: url("../images/main-bg.png");
 }
 
 .s1-more-details {
@@ -428,7 +428,7 @@ img {
 
 .more-details {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   justify-content: flex-start;
@@ -437,14 +437,14 @@ img {
 }
 
 .details-card {
-  background: rgba(251, 255, 241, 0.9);
+  background: #fbfff1;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   padding: 20px 20px;
   border-radius: var(--brand-radius);
   text-align: left;
-  border: #090c9b 2px solid;
-  box-shadow: 2.5px 2.5px 0px var(--brand-navyblue);
+  border: var(--text-dark) 2px solid;
+  box-shadow: 2.5px 2.5px 0px var(--text-dark);
   transition: var(--transition);
 
   min-width: 250px;
@@ -453,7 +453,7 @@ img {
 }
 
 .details-card:hover {
-  box-shadow: 0px 0px 0px var(--brand-navyblue);
+  box-shadow: 0px 0px 0px var(--text-dark);
   transform: translate(2.5px, 2.5px);
 }
 
@@ -479,6 +479,73 @@ img {
 
 .details-card img {
   margin-top: 30px;
+}
+
+.great-ideas {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 20px 20px;
+  background: #fbfff1;
+  color: var(--text-dark);
+  border-top: #3c3744 2px solid;
+  border-bottom: #3c3744 2px solid;
+  margin: 0 auto;
+}
+
+.question-mark {
+  color: var(--brand-navyblue);
+}
+
+.great-ideas-scrolling {
+  padding: 10px 20px;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  gap: 10px;
+
+  animation: pingpong 50s ease-in-out infinite;
+  width: max-content;
+}
+
+.scrolling-tile {
+  background: #fbfff1;
+  border: #3c3744 2px solid;
+  padding: 10px 20px;
+  border-radius: var(--brand-radius);
+  display: flex;
+  box-shadow: 1.5px 1.5px 0px var(--text-dark);
+}
+
+.scrolling-tile img {
+  height: 25px;
+  width: auto;
+  padding-right: 10px;
+}
+
+@keyframes pingpong {
+  0% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+.try-them {
+  text-align: left;
+  line-height: 1.6;
+  padding: 10px 20px;
+  background: #fbfff1;
+  color: var(--text-dark);
+  border-top: #3c3744 2px solid;
+  border-bottom: #3c3744 2px solid;
+  margin: 0 auto;
 }
 
 .footer {
