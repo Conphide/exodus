@@ -3,209 +3,427 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Host Your First Bot | Pay Nothing</title>
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Host your bots and applications for free with blazing-fast speed and ironclad security. Exodus provides powerful free-tier hosting that outperforms 90% of the competition."
     />
 
-    <!-- <link rel="preload" href="css/styles.css" as="style" />
-    <link rel="preload" href="js/main.js" as="script" />
+    <title>Host Your First Bot | Pay Nothing | Exodus</title>
 
-    <link rel="preload" href="assets/logo.svg" as="image" />
-    <link rel="preload" href="images/hero-bg.svg" as="image" />
-    <link rel="preload" href="images/hero-1.png" as="image" />
-    <link rel="preload" href="images/hero-2.png" as="image" />
-    <link rel="preload" href="images/hero-3.png" as="image" />
-    <link rel="preload" href="images/hero-4.png" as="image" /> -->
-
-    <link rel="preload" href="/favicon-32x32.png" as="image" />
-    <link rel="preload" href="/favicon-16x16.png" as="image" />
-
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <a id="scroll-back-up"></a>
-
-    <nav class="navbar" id="navbar">
+    <!-- Navigation -->
+    <nav
+      class="navbar"
+      id="navbar"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div class="nav-container">
         <div class="nav-logo">
-          <a href="#scroll-back-up">
-            <img src="assets/logo.svg" alt="Exodus Logo" />
+          <a href="#top" aria-label="Exodus Home">
+            <img
+              src="assets/logo.svg"
+              alt="Exodus Logo"
+              width="120"
+              height="40"
+            />
           </a>
         </div>
 
-        <!-- Here lies the remains of a hamburger menu button that couldn't be implemented :( -->
-
-        <!-- Remember to link button to extra functionality -->
-        <a href="#dashboard-or-shop" class="dashboard-btn" id="sideButton"
-          >Jump In</a
+        <button
+          class="nav-cta"
+          id="navCta"
+          aria-label="Get started with hosting"
         >
+          Jump In
+        </button>
       </div>
 
-      <div class="side-menu" id="sideMenu">
-        <a href="#test1">Test 1</a>
-        <a href="#test2">Test 2</a>
-        <a href="#test3">Test 3</a>
-        <a href="#dashboard" class="master-sidebar-link">Host My Bot</a>
-        <a href="#shop" class="servant-sidebar-link">Buy Logs</a>
+      <!-- Side Menu -->
+      <div class="side-menu" id="sideMenu" role="menu">
+        <a href="#features" role="menuitem">Features</a>
+        <a href="#use-cases" role="menuitem">Use Cases</a>
+        <a href="#pricing" role="menuitem">Pricing</a>
+        <a
+          href="#dashboard"
+          class="side-menu__cta side-menu__cta--primary"
+          role="menuitem"
+        >
+          Host My Bot
+        </a>
+        <a
+          href="#shop"
+          class="side-menu__cta side-menu__cta--secondary"
+          role="menuitem"
+        >
+          Buy Logs
+        </a>
       </div>
     </nav>
 
-    <section class="hero-section" id="heroSection">
-      <div class="hero-container">
-        <div class="hero-text" id="heroText">
-          <h1 class="hero-heading">
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
             Your
-            <span class="rotating-word" id="rotatingWord">Bot</span><br />
-            Hosting Journey, Begins Here&nbsp;&nbsp;<span class="dot">.</span>
+            <span class="hero__rotating-word" id="rotatingWord">Bot</span><br />
+            Hosting Journey, Begins Here&nbsp;&nbsp;<span class="hero__dot"
+              >.</span
+            >
           </h1>
-          <p class="hero-subtext">
-            Blazing-fast speed. Ironclad security. Just for you!<br />Access
-            free plans that <u>outperform</u> 90% of the competition.
+
+          <p class="hero__subtitle">
+            Blazing-fast speed. Ironclad security. Just for you!<br />
+            Access free plans that <u><strong>outperform</strong></u> 90% of the
+            competition.
           </p>
-          <div class="hero-cta">
-            <a href="#dashboard" class="btn-primary">Host My Bot</a>
-            <a href="#logs" class="btn-secondary">Here For Logs?</a>
+
+          <div class="hero__cta">
+            <a href="#dashboard" class="btn btn--primary">Host My Bot</a>
+            <a href="#logs" class="btn btn--secondary">Here For Logs?</a>
           </div>
         </div>
 
-        <div class="hero-image" id="heroImage">
+        <div class="hero__image">
           <img
             src=""
-            alt="Lady wearing a helmet, futuristic, side view"
+            alt="Futuristic technology illustration"
             id="heroImg"
+            width="600"
+            height="600"
+            loading="eager"
           />
         </div>
       </div>
     </section>
 
-    <main class="main-content">
-
-      <section class="s1-more-details" id="s1MoreDetails">
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Features Section -->
+      <section class="features" id="features">
         <div class="container">
-          <div class="more-details">
+          <div class="features__grid">
+            <!-- Feature Card 1 -->
+            <article class="card">
+              <h2 class="card__title">
+                Host <span class="highlight">Anything</span>
+              </h2>
+              <p class="card__text">Use it <strong>anywhere.</strong></p>
+              <p class="card__text">
+                Our infrastructure is built to power a wide range of modern
+                workloads, virtually anything from lightweight bots to
+                full-scale applications.
+              </p>
+              <img
+                src="/images/host-anything.png"
+                alt="Infographic showing various hosting capabilities"
+                class="card__image"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </article>
 
-            <!-- Consider seperating texts and images using grid, just like hero section -->
-            <div class="details-card">
-              <h3>Host <u style="text-decoration-color: #090c9b">Anything</u></h3>
-              <p>Use it <u>anywhere.</u></p>
-              <p>Our infrastructure is built to power a wide range of modern workloads, virtually anything from lightweight bots to full-scale applications.</p>
-              <img src="/images/host-anything.png" alt="Infographics: Host anything on Exodus"></img>
+            <!-- Feature Card 2 -->
+            <article class="card">
+              <h2 class="card__title">
+                High <span class="highlight">Performance</span> & Reliability
+              </h2>
+              <p class="card__text">
+                Fast servers, optimized infrastructure and active monitoring to
+                ensure consistency and <strong>guaranteed uptimes</strong>.
+              </p>
 
-            </div>
+              <h2 class="card__title">
+                Proactive <span class="highlight">Security</span> & Support
+              </h2>
+              <p class="card__text">
+                Multiple <strong>security layers</strong> protect your data,
+                backed by responsive 24/7 support.
+              </p>
 
-            <div class="details-card">
-              <h3>High <u style="text-decoration-color: #090c9b">Performance</u> & Reliability</h3>
-              <p>Fast servers, optimized infrastructure and active monitoring to ensure consistency and <u>guaranteed uptimes</u>.</p>
+              <h2 class="card__title">
+                Developer-Focused &
+                <span class="highlight">Community-Driven</span>
+              </h2>
+              <p class="card__text">
+                Powerful tools, intuitive interfaces, and a growing developer
+                community for <strong>inspiration and assistance</strong>.
+              </p>
+            </article>
 
-              <h3>Proactive <u style="text-decoration-color: #090c9b">Security</u> & Support</h3>
-              <p>Multiple <u>security layers</u> protect your data, backed by responsive 24/7 support.</p>
+            <!-- Feature Card 3 -->
+            <article class="card">
+              <h2 class="card__title">
+                Priority: <span class="highlight">Free-Tier</span> Policy
+              </h2>
+              <p class="card__text">
+                Our journey as a brand begins with a simple vision: delivering
+                the most powerful Free-Tier resources available, without
+                compromising on premium
+                <strong>quality.</strong>
+              </p>
+              <p class="card__text">
+                The performance and resources you receive on our free servers
+                surpass those of more than 90% of similar services, and that's
+                our definition of success.
+              </p>
+              <img
+                src="/images/your-savings.png"
+                alt="Infographic showing cost savings"
+                class="card__image"
+                width="400"
+                height="300"
+                loading="lazy"
+              />
+            </article>
 
-              <h3>Developer-Focused & <u style="text-decoration-color: #090c9b">Community-Driven</u></h3>
-              <p>Powerful tools, intuitive interfaces, and a growing developer community for <u>inspiration and assistance</u>.</p>
-            </div>
-
-            <div class="details-card">
-              <h3>Priority: <u style="text-decoration-color: #090c9b">Free-Tier</u> Policy</h3>
-              <p>Our journey as a brand begins with a simple vision: delivering the most powerful Free-Tier resources available, without compromising on premium <u>quality.</u></p>
-              <p>The performance and resources you receive on our free servers surpass those of more than 90% of similar services, and that’s our definition of success.</p>
-              <img src="/images/your-savings.png" alt="Infographics: Save money on Exodus"></img>
-            </div>
-
-            <!-- Never remove this empty div!!! -->
-            <div></div>
-
+            <!-- Never remove this empty article :) -->
+            <article></article>
           </div>
-
         </div>
       </section>
 
-      <section class="great-ideas">
-        <p>You know all those great ideas you have<span class="question-mark">?</span></p>
-      </section>
-
-
-      <section class="great-ideas-scrolling">
-        <div class="scroller">
-          <div class="scrolling-tile"><img src="/images/minecraft-logo.svg" alt="Minecraft Logo"><p>Minecraft Servers</p></div>
-          <div class="scrolling-tile"><img src="/images/gta-logo.svg" alt="GTA Logo"><p>GTA Servers</p></div>
-          <div class="scrolling-tile"><img src="/images/discord-logo.svg" alt="Discord Logo"><p>Discord Bots</p></div>
-          <div class="scrolling-tile"><img src="/images/nginx-logo.svg" alt="NGINX Logo"><p>NGINX</p></div>
-          <div class="scrolling-tile"><img src="/images/apache-logo.svg" alt="Apache Logo"><p>Apache</p></div>
-          <div class="scrolling-tile"><img src="/images/php-logo.svg" alt="PHP Logo"><p>PHP Apps</p></div>
-          <div class="scrolling-tile"><img src="/images/game-logo.svg" alt="Game Logo"><p>Game Servers</p></div>
-          <div class="scrolling-tile"><img src="/images/terraria-logo.svg" alt="Terraria Logo"><p>Terraria Servers</p></div>
-          <div class="scrolling-tile"><img src="/images/whatsapp-logo.svg" alt="WhatsApp Logo"><p>WhatsApp Bots</p></div>
-          <div class="scrolling-tile"><img src="/images/telegram-logo.svg" alt="Telegram Logo"><p>Telegram Bots</p></div>
-          <div class="scrolling-tile"><img src="/images/python-logo.svg" alt="Python Logo"><p>Python Apps</p></div>
-          <div class="scrolling-tile"><img src="/images/nodejs-logo.svg" alt="NodeJS Logo"><p>NodeJS Apps</p></div>
-          <div class="scrolling-tile"><img src="/images/network-logo.svg" alt="Network Logo"><p>Proxy/Network Tools</p></div>
-          <div class="scrolling-tile"><img src="/images/mongodb-logo.svg" alt="MongoDB Logo"><p>MongoDB</p></div>
-          <div class="scrolling-tile"><img src="/images/mysql-logo.svg" alt="MySQL Logo"><p>MySQL/MariaDB</p></div>
+      <!-- Use Cases Intro -->
+      <section class="use-cases-intro">
+        <div class="container">
+          <p class="use-cases-intro__text">
+            You know all those great ideas you have<span class="accent-color"
+              >?</span
+            >
+          </p>
         </div>
       </section>
 
-
-      <section class="try-them">
-        <p>We want you to try them all, and see what works.</p>
+      <!-- Use Cases Carousel -->
+      <section
+        class="use-cases-carousel"
+        aria-label="Supported platforms and services"
+      >
+        <div class="carousel">
+          <div class="carousel__track">
+            <div class="carousel__item">
+              <img
+                src="/images/minecraft-logo.svg"
+                alt="Minecraft"
+                width="32"
+                height="32"
+              />
+              <span>Minecraft Servers</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/gta-logo.svg"
+                alt="GTA"
+                width="32"
+                height="32"
+              />
+              <span>GTA Servers</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/discord-logo.svg"
+                alt="Discord"
+                width="32"
+                height="32"
+              />
+              <span>Discord Bots</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/nginx-logo.svg"
+                alt="NGINX"
+                width="32"
+                height="32"
+              />
+              <span>NGINX</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/apache-logo.svg"
+                alt="Apache"
+                width="32"
+                height="32"
+              />
+              <span>Apache</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/php-logo.svg"
+                alt="PHP"
+                width="32"
+                height="32"
+              />
+              <span>PHP Apps</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/game-logo.svg"
+                alt="Gaming"
+                width="32"
+                height="32"
+              />
+              <span>Game Servers</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/terraria-logo.svg"
+                alt="Terraria"
+                width="32"
+                height="32"
+              />
+              <span>Terraria Servers</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/whatsapp-logo.svg"
+                alt="WhatsApp"
+                width="32"
+                height="32"
+              />
+              <span>WhatsApp Bots</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/telegram-logo.svg"
+                alt="Telegram"
+                width="32"
+                height="32"
+              />
+              <span>Telegram Bots</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/python-logo.svg"
+                alt="Python"
+                width="32"
+                height="32"
+              />
+              <span>Python Apps</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/nodejs-logo.svg"
+                alt="Node.js"
+                width="32"
+                height="32"
+              />
+              <span>Node.js Apps</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/network-logo.svg"
+                alt="Networking"
+                width="32"
+                height="32"
+              />
+              <span>Proxy/Network Tools</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/mongodb-logo.svg"
+                alt="MongoDB"
+                width="32"
+                height="32"
+              />
+              <span>MongoDB</span>
+            </div>
+            <div class="carousel__item">
+              <img
+                src="/images/mysql-logo.svg"
+                alt="MySQL"
+                width="32"
+                height="32"
+              />
+              <span>MySQL/MariaDB</span>
+            </div>
+          </div>
+        </div>
       </section>
-      
+
+      <!-- Call to Action -->
+      <section class="cta-section">
+        <div class="container">
+          <p class="cta-section__text">
+            We want you to
+            <a href="#top"
+              ><u><strong>try them all</strong></u></a
+            >, and see what works.
+          </p>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-container">
-        <!-- Consider adding a logo or some sort of branding here -->
-
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>Studio</h4>
-            <a href="#contact">Contact</a>
-            <a href="#community">Community</a>
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3 class="footer__heading">Studio</h3>
+            <a href="#contact" class="footer__link">Contact</a>
+            <a href="#community" class="footer__link">Community</a>
           </div>
 
-          <div class="footer-section">
-            <h4>Resources</h4>
-            <a href="#blog">Blog</a>
-            <a href="#docs">Knowledgebase</a>
+          <div class="footer__section">
+            <h3 class="footer__heading">Resources</h3>
+            <a href="#blog" class="footer__link">Blog</a>
+            <a href="#docs" class="footer__link">Knowledgebase</a>
           </div>
 
-          <div class="footer-section">
-            <h4>Legal</h4>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
+          <div class="footer__section">
+            <h3 class="footer__heading">Legal</h3>
+            <a href="#privacy" class="footer__link">Privacy Policy</a>
+            <a href="#terms" class="footer__link">Terms of Service</a>
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <p>&copy; Exodus. Built with 💚</p>
+        <div class="footer__bottom">
+          <p>&copy; 2025 Exodus. Built with 💚</p>
         </div>
 
-        <div class="footer-icons">
-          <div class="footer-icons-img">
-            <img src="/images/exodus-light.svg" alt="Exodus Logo" />
-          </div>
-          <div class="footer-icons-img">
-            <img src="/images/conphide-light.svg" alt="Conphide Logo" />
-          </div>
-          <div class="footer-icons-img">
-            <img
-              src="/images/04danger-light.svg"
-              alt="TREASURE404DANGER Logo"
-            />
-          </div>
+        <div class="footer__brands">
+          <img
+            src="/images/exodus-light.svg"
+            alt="Exodus"
+            width="80"
+            height="30"
+          />
+          <img
+            src="/images/conphide-light.svg"
+            alt="Conphide"
+            width="80"
+            height="30"
+          />
+          <img
+            src="/images/04danger-light.svg"
+            alt="TREASURE404DANGER"
+            width="80"
+            height="30"
+          />
         </div>
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
   </body>
 </html>
